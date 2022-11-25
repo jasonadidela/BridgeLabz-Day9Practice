@@ -1,36 +1,60 @@
-import java.util.ArrayList;
-
-import java.util.List;
-
 public class AddressBookMain {
 
-    private final String firstName;
-    private final String lastName;
-    private final String address;
-    private final String city;
-    private final String state;
-    private final String phoneNumber;
-    private final String email;
+    private  String firstName;
+    private  String lastName;
+    private  String address;
+    private  String city;
+    private  String state;
+    private  String phoneNumber;
+    private  String email;
 
-    public AddressBookMain(String firstName, String lastName, String address, String city, String state, String phoneNumber, String email) {
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
         this.address = address;
-        this.city = city;
+    }
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city= city;
+    }
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
         this.state = state;
+    }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
-        }
-        public static void main(String[] args) {
-        List<AddressBookMain> list = new ArrayList<>();
-        AddressBookMain a1 = new AddressBookMain("jason", "Adidela", "Boduppal", "Hyderabad", "Telangana", "7013770364", "jasonadidela@gmail.com");
-        AddressBookMain a2 = new AddressBookMain("jason", "Adidela", "Boduppal", "Hyderabad", "Telangana", "7013770364", "jasonadidela@gmail.com");
-        AddressBookMain a3 = new AddressBookMain("jason", "Adidela", "Boduppal", "Hyderabad", "Telangana", "7013770364", "jasonadidela@gmail.com");
-        list.add(a1);
-        list.add(a2);
-        list.add(a3);
-            for (AddressBookMain a : list) {
-                System.out.println("First Name: " + a.firstName + "\nLast Name:  " + a.lastName + "\nAddress: " + a.address + "\nCity: " + a.city + "\nState: " + a.state + "\nPhone No: " + a.phoneNumber + "\nEmail: " + a.email);
-            }
     }
 }
