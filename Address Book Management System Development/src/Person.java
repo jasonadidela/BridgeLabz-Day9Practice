@@ -5,6 +5,7 @@ public class Person {
     private  String address;
     private  String city;
     private  String state;
+    private  String zipCode;
     private  String phoneNumber;
     private  String email;
 
@@ -42,6 +43,13 @@ public class Person {
 
     public void setState(String state) {
         this.state = state;
+    }
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
     public String getPhoneNumber() {
         return phoneNumber;
