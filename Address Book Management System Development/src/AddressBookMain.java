@@ -1,5 +1,7 @@
 public class AddressBookMain {
     public static void main(String[] args) {
-        System.out.println("Welcome to Address Book Program in AddressBookMain class on Master Branch ");
+        Person person = new Person();
+        CreateAddressBook.addContact(person);
+        CreateAddressBook.editContact(person);
     }
 }
