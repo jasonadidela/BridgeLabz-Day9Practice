@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
 public class AddressBookMain {
-    public static void main() {
+    public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter The following number:\n 1. To Display Add Contact:\n 2. To Display Edit Contact:" +
-                                    "\n 3. To Display Delete Contact: ");
+        System.out.println("""
+                Enter The following number:
+                 1. To Display Add Contact
+                 2. To Display Edit Contact
+                 3. To Display Delete Contact""");
         int num = scanner.nextInt();
         Person person = new Person();
         switch (num) {
@@ -21,6 +24,7 @@ public class AddressBookMain {
                 System.out.println("Person Contact Deleted");
                 CreateAddressBook.deleteContact(person);
             }
+            default -> System.out.println("Invalid Entry");
         }
     }
 }

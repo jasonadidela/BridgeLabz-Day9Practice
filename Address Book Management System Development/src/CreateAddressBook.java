@@ -1,14 +1,14 @@
 public class CreateAddressBook {
 
         static void addContact(Person person) {
-            person.setFirstName("firstName");
-            person.setLastName("lastName");
+            person.setFirstName("Jason");
+            person.setLastName("Adidela");
             person.setAddress("Boduppal");
-            person.setCity("city");
-            person.setState("state");
-            person.setZipCode("zipCode");
-            person.setPhoneNumber("phoneNumber");
-            person.setEmail("email");
+            person.setCity("Hyderabad");
+            person.setState("Telangana");
+            person.setZipCode("500092");
+            person.setPhoneNumber("+91-7013770364");
+            person.setEmail("jasonadidela@gmail.com");
 
         }
         static void editContact(Person person){
@@ -25,8 +25,8 @@ public class CreateAddressBook {
     }
 
         static void deleteContact(Person person) {
-            person.setFirstName("Null");
-            person.setLastName("Null");
+            person.setFirstName(null);
+            person.setLastName(null);
             person.setAddress("Null");
             person.setCity("Null");
             person.setState("Null");
