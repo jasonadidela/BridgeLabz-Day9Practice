@@ -4,7 +4,6 @@ public class AddressBookMain {
     public static void main(String[] args) {
         int i = 1;
         do {
-            i++;
             Scanner scanner = new Scanner(System.in);
             System.out.println("""
                     Enter The following number:
