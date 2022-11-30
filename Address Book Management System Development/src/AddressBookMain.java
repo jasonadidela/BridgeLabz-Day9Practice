@@ -6,7 +6,7 @@ public class AddressBookMain {
         do {
             Scanner scanner = new Scanner(System.in);
             System.out.println("""
-                    Enter The following number:
+                    Enter The following:
                      [A/a]. To Display Add Contact
                      [E/e]. To Display Edit Contact
                      [D/d]. To Display Contact
